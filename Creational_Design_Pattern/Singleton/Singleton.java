@@ -4,7 +4,7 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class Singleton {
+public final class Singleton {
     private static Singleton db = null;
     private static Semaphore sp = new Semaphore(1);
     private Singleton(){
